@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fintech Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top nav -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand-dot"></span>
+        <span>boobi.</span>
+      </a>
+
+      <nav class="navlinks" id="navLinks">
+        <a href="#product">Find Project</a>
+        <a href="#freelancers">Find Freelancer</a>
+        <a href="#why">Why Plans</a>
+        <a href="#enterprise">Enterprise</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="#login">Login</a>
+        <a class="btn btn-dark" href="#join">Join</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card hero-left">
+          <p class="pill">💸 Smart finance, less stress</p>
+          <h1>Reimagine money,<br/>Simple solutions</h1>
+          <p class="sub">
+            Automatically track your expenses, set budgets, and achieve your financial goals.
+            A clean experience that feels premium, not spammy.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-dark" href="#join">Create Account</a>
+            <a class="btn btn-light" href="#contact">Contact Sales</a>
+          </div>
+
+          <div class="hero-mini">
+            <div class="mini-stat">
+              <div class="avatars">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div>
+                <div class="mini-title">50k Downloads</div>
+                <div class="mini-desc">Trusted by teams and creators worldwide.</div>
+              </div>
+            </div>
+
+            <div class="trusted">
+              <span class="trusted-label">Trusted by</span>
+              <div class="logos">
+                <span>Spotify</span>
+                <span>Airbnb</span>
+                <span>Slack</span>
+                <span>Stripe</span>
+                <span>Airwallex</span>
+                <span>Booking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card hero-right">
+          <!-- Phone mockup (pure CSS, no images needed) -->
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-top">
+                <div class="phone-title">Complete Revenue This Year</div>
+                <div class="phone-metric">
+                  <span class="big">4.93%</span>
+                  <span class="tiny down">-2.3%</span>
+                </div>
+              </div>
+
+              <div class="spark-wrap">
+                <svg class="spark" viewBox="0 0 320 110" aria-hidden="true">
+                  <path d="M10,80 C50,50 90,70 120,48 C150,28 190,70 220,55 C250,43 290,40 310,30" fill="none" stroke="currentColor" stroke-width="3" />
+                  <path d="M10,90 C50,70 90,84 120,66 C150,50 190,85 220,76 C250,68 290,63 310,55" fill="none" stroke="currentColor" stroke-width="3" opacity="0.25"/>
+                </svg>
+              </div>
+
+              <div class="float-card float-1">
+                <div class="float-title">Balance</div>
+                <div class="float-value">$23,643.00</div>
+              </div>
+
+              <div class="float-card float-2">
+                <div class="float-title">Transaction History</div>
+                <div class="tx">
+                  <div class="tx-row"><span>Steven Hussain</span><span class="neg">-$10.12</span></div>
+                  <div class="tx-row"><span>Staking Rewards</span><span class="pos">+$32.12</span></div>
+                  <div class="tx-row"><span>Subscription</span><span class="neg">-$8.00</span></div>
+                </div>
+              </div>
+
+              <div class="bar">
+                <div class="bar-label">Savings</div>
+                <div class="bar-track"><div class="bar-fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Side-by-side blocks like your screenshot -->
+    <section class="split" id="why">
+      <div class="container split-grid">
+        <div class="panel">
+          <h2>Integration to control your payment and more</h2>
+
+          <div class="cards-3">
+            <article class="card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 7-7 13L5 9l7-7z" fill="currentColor"/></svg>
+              </div>
+              <h3>Speed up your transactions</h3>
+              <p>Process payments seamlessly in real-time with optimized throughput.</p>
+            </article>
+
+            <article class="card accent">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 5v5l4 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <h3>International reach</h3>
+              <p>Expand globally with multi-currency support and verified payment rails.</p>
+            </article>
+
+            <article class="card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 12h8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <h3>Click, add to Chrome</h3>
+              <p>One-tap setup, then everything syncs across your profile.</p>
+            </article>
+          </div>
+
+          <div class="media">
+            <div class="media-thumb"></div>
+            <div class="media-meta">
+              <div class="media-title">Preparing your future</div>
+              <div class="media-sub">Simple tools, serious results.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Control all your bills and learn best finance app</h2>
+
+          <div class="qa">
+            <div class="qa-row">
+              <span class="qa-num">01.</span>
+              <button class="qa-q" type="button" data-acc>
+                Is that application work in my area?
+                <span class="chev">+</span>
+              </button>
+              <div class="qa-a">
+                Yes, we support multiple regions. You can check availability inside the app settings.
+              </div>
+            </div>
+
+            <div class="qa-row">
+              <span class="qa-num">02.</span>
+              <button class="qa-q" type="button" data-acc>
+                Can you yearly subscription for the app?
+                <span class="chev">+</span>
+              </button>
+              <div class="qa-a">
+                Yep, monthly and yearly plans. Yearly usually comes with a discount.
+              </div>
+            </div>
+
+            <div class="qa-row">
+              <span class="qa-num">03.</span>
+              <button class="qa-q" type="button" data-acc>
+                What payment methods are accepted through the app?
+                <span class="chev">+</span>
+              </button>
+              <div class="qa-a">
+                Cards, bank transfer, and supported wallets. Exact options depend on your region.
+              </div>
+            </div>
+
+            <div class="qa-row">
+              <span class="qa-num">04.</span>
+              <button class="qa-q" type="button" data-acc>
+                Can I check the availability of charging stations in real-time?
+                <span class="chev">+</span>
+              </button>
+              <div class="qa-a">
+                If you integrate our partner map, yes, real-time availability is supported.
+              </div>
+            </div>
+
+            <div class="qa-row">
+              <span class="qa-num">05.</span>
+              <button class="qa-q" type="button" data-acc>
+                How do I find charging stations using the app?
+                <span class="chev">+</span>
+              </button>
+              <div class="qa-a">
+                Go to Explore, then Locations. You can filter by distance, price, and rating.
+              </div>
+            </div>
+          </div>
+
+          <div class="quote">
+            <h3>Don’t Take Our Word for It</h3>
+            <p>Real teams ship faster and stress less using this setup.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- “Business model build with AI” style block -->
+    <section class="metrics" id="product">
+      <div class="container metrics-grid">
+        <div class="metrics-left">
+          <h2>Check our Business Model<br/>build with AI</h2>
+          <p class="muted">
+            Clean analytics, clear outcomes. No messy dashboards that look like a spaceship cockpit.
+          </p>
+
+          <ul class="bullets">
+            <li>
+              <span class="dot"></span>
+              <div>
+                <strong>AI is the future of Mobile apps</strong>
+                <p>We help you ship features faster with smarter automation.</p>
+              </div>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <div>
+                <strong>No cost until you hire</strong>
+                <p>Start free, then scale when it’s actually working.</p>
+              </div>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <div>
+                <strong>Safe and secure</strong>
+                <p>Modern auth patterns, encryption defaults, clean compliance basics.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="metrics-right">
+          <div class="metrics-card">
+            <div class="meter">
+              <div class="meter-ring">
+                <div class="meter-inner">
+                  <div class="meter-val">80%</div>
+                  <div class="meter-sub">Growth</div>
+                </div>
+              </div>
+              <div class="meter-legend">
+                <div><span class="lg a"></span> Set</div>
+                <div><span class="lg b"></span> Cashback</div>
+                <div><span class="lg c"></span> Return</div>
+              </div>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <div class="stat-k">500</div>
+                <div class="stat-l">Digital experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat-k">14M</div>
+                <div class="stat-l">Total clients</div>
+              </div>
+              <div class="stat">
+                <div class="stat-k">15K</div>
+                <div class="stat-l">Digital solutions</div>
+              </div>
+            </div>
+
+            <div class="person">
+              <div class="person-photo"></div>
+              <div class="person-note">
+                <div class="person-title">Card User</div>
+                <div class="mini-chart"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="cta" id="contact">
+      <div class="container cta-inner">
+        <h2>I’m excited to work with you and bring your vision to life.</h2>
+        <p>Send me a message, and we’ll discuss the details.</p>
+
+        <form class="form" id="contactForm">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Email address" required />
+          <textarea name="message" rows="4" placeholder="Tell me what you want to build..." required></textarea>
+          <button class="btn btn-dark" type="submit">Send message</button>
+          <p class="form-note" id="formNote" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="foot-left">
+          <div class="brand small"><span class="brand-dot"></span><span>boobi.</span></div>
+          <p class="muted">Minimal finance landing page starter.</p>
+        </div>
+        <div class="foot-right">
+          <a href="#top">Back to top</a>
+          <a href="#product">Product</a>
+          <a href="#why">Why</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
