@@ -5,6 +5,8 @@ A modern, responsive fintech landing page built with **HTML5, CSS3, and Vanilla 
 This project focuses on clean UI, smooth interactions, and a professional SaaS-style layout suitable for startups, portfolios, or client demos.
 
 ---
+### 🔗 Live Website
+https://johnjoshuajj200m.github.io/fintech-landing-page/
 
 ## ✨ Features
 
